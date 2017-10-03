@@ -7,12 +7,16 @@ This repo contains a Docker image that can be used to test oh-my-git both on Bas
 Build
 =====
 
-Clone oh-my-git from `git@github.com:arialdomartini/oh-my-git.git` or from your fork in the project root.
+Clone oh-my-git from [its repository](https://github.com/arialdomartini/oh-my-git) or from your fork in some directory:
+
+```
+git clone git@github.com:arialdomartini/oh-my-git.git omg_somedirectory
+```
 
 Then run:
 
 ```
-./build.sh
+./build.sh omg_directory
 ```
 
 It will produce the Docker image `oh-my-git:latest`, comprising Bash and zsh, with oh-my-git enabled and configured for the root account.
