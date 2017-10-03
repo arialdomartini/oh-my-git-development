@@ -12,6 +12,12 @@ if [ "$#" -ne 1 ]; then
     exit -1
 fi
 
+if [ ! -d ${OMGDIR} ]; then
+    echo "No directory: ${OMGDIR}"
+    usage
+    exit -1
+fi
+
 docker run -ti \
        --name oh-my-git-bash \
        --rm \
