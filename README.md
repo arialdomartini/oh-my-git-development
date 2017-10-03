@@ -35,3 +35,5 @@ Run:
 ```
 
 to get a zsh environment.
+
+Note that the font must be configured in the host. Follow instruction on [oh-my-git README](https://github.com/arialdomartini/oh-my-git#the-font)
