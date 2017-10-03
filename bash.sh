@@ -1,6 +1,5 @@
-realpath() {
-    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
-}
+set -e
+source realpath.sh
 
 OMGDIR=`realpath ${1}`
 
