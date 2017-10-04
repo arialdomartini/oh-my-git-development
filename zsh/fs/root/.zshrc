@@ -5,19 +5,17 @@ echo -n
 
 source .antigen/antigen.zsh
 
-load_omg() {
-    setopt prompt_subst
-    source .oh-my-git-themes/spectrum.zsh
-    source .oh-my-git/base.sh
-    source .oh-my-git-themes/oppa-lana-style.zsh-theme
-}
-
+echo -n "\n"
 read -q "AUTOLOAD?Load oh-my-git sourcing its scripts? "
 
 if [[ ${AUTOLOAD} == "y" ]]; then
-    load_omg
+    source ~/.load-via-scripts.zsh
 else
-    echo -n "\nFeel free to load oh-my-git either via its scripts or via Antigen\n"
+    echo -n "Feel free to load oh-my-git either running its scripts, with:\n"
+    echo " source ../load-with-scripts.zsh"
+    echo -n "or via Antigen with:\n"
+    echo " source ../install-with-antigen.zsh"
+    echo -n "\n\n"
 fi
 
 cd .oh-my-git-themes
