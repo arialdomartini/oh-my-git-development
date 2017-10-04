@@ -1,5 +1,5 @@
 set -e
-source realpath.sh
+source libs/realpath.sh
 
 usage() {
     echo "usage: `basename $0` oh-my-git_repository_path"
@@ -23,5 +23,5 @@ docker run -ti \
        --rm \
        --env OMGDIR=${OMGDIR} \
        -v ${OMGDIR}:/root/.oh-my-git \
-       oh-my-git:latest \
+       oh-my-git-bash:latest \
        /bin/bash
