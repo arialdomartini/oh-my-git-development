@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get -y install git zsh 
-#RUN git clone https://github.com/zsh-users/antigen.git ~/.antigen
+RUN git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
 WORKDIR /root/
 
